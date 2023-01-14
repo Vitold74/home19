@@ -4,7 +4,7 @@ from setup_db import db
 
 class Movie(db.Model):
         __tablename__ ='movie'
-        id = db.Column(db.Integer, prinary_key=True)
+        id = db.Column(db.Integer, primary_key=True)
         title =db.Column(db.String(255))
         description = db.Column(db.String(255))
         trailer = db.Column(db.String(255))

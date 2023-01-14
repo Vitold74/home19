@@ -7,7 +7,7 @@ from constants import JWT_SECRET, JWT_ALGORITHM
 class AuthService:
     def __init__(self, user_service: UserService):
         self.user_service = user_service
-    def generate_tokens(self, username, password, is_refresh = False):
+    def generate_tokens(self, username, password, is_refresh=False):
         user = self.user_service.get_by_username(username)
 
         if user in None:
